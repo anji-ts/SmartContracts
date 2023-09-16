@@ -7,7 +7,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 contract AnjiToken is ERC20,Ownable{
 
     constructor() ERC20('AnjiToken','AT'){
-        _mint(msg.sender,1000);
+        _mint(msg.sender,100000*(10**decimals()));
     }
 
     function mint(address account,uint amount) public onlyOwner returns(bool){
@@ -24,7 +24,7 @@ contract AnjiToken is ERC20,Ownable{
 
     function buyTokensWithEthers() public payable{
         require(msg.value<=msg.sender.balance && msg.value != 0 ether,"ICO: Insufficiet Funds");
-        uint amount = msg.value*1000;
+        uint amount = msg.value;
         _transfer(owner(),_msgSender(),amount);
     }
 
