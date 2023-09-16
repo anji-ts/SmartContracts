@@ -9,5 +9,7 @@ module.exports = {
     currency:"INR",
     noColors:true,
     outputFile:"gasReport.txt",
+    coinmarketcap:"39d7e2e4-7574-4986-8f8b-1525653e01a4",
+    token:"matic",
   }
 };
