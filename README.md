@@ -5,9 +5,7 @@ This project showcases a collection of smart contracts designed for seamless int
 
 ### Table of Contents
 Installation  
-Usage  
-Smart Contracts  
-Testing  
+Usage    
 Deployment  
 Features  
 Contributing  
@@ -24,12 +22,11 @@ git clone https://github.com/anji-ts/SmartContracts.git
 cd SmartContracts  
 npm install
 
-### Usage
+### Usage:
 
-Run these smart contracts by following these hardhat commands:
-##### Compilation
+#### Compilation
 npx hardhat compile
-##### Testing
+#### Testing
 Ensure the reliability of these smart contracts by running comprehensive tests using ethers.js or other testing frameworks. Test scripts and guidelines are included.  
 Run the following command in hardhat to test the smart contracts   
 npx hardhat test
